@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #fefefe;
+  transition: 300ms all ease;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+  background-color: #fff;
+  transition: 300ms all ease;
+}
+@media only screen and (min-width: 1115px) {
+  header {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    padding: 1em 3em;
+    box-shadow: 0 3px 10px #ddd;
+  }
+}
+header .title-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+@media only screen and (min-width: 1115px) {
+  header .title-navbar {
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+header .title-navbar .navbar {
+  overflow: hidden;
+  width: 24.5em;
+  text-align: center;
+}
+@media only screen and (min-width: 1115px) {
+  header .title-navbar .navbar {
+    width: 60em;
+  }
+}
+header .title-navbar .navbar .menu {
+  color: #005eac;
+  padding: 0.5em 0;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+}
+@media only screen and (min-width: 1115px) {
+  header .title-navbar .navbar .menu {
+    display: none;
+  }
+}
+header .title-navbar .navbar ul {
+  display: none;
+  transition: 300ms all ease;
+  opacity: 0;
+}
+@media only screen and (min-width: 1115px) {
+  header .title-navbar .navbar ul {
+    display: flex;
+    opacity: 1;
+  }
+}
+header .title-navbar .navbar ul li a {
+  text-align: left;
+  padding: 0.8em 1em;
+  display: block;
+  font-weight: bolder;
+  color: #707070;
+  transition: 300ms all ease;
+  font-size: 20px;
+}
+@media only screen and (min-width: 1115px) {
+  header .title-navbar .navbar ul li a {
+    font-size: 18px;
+  }
+}
+header .title-navbar .navbar ul li a:hover {
+  color: #005eac;
+  transform: scale(1.05);
+}
+header .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+header .social-media .apps {
+  display: flex;
+  gap: 0.4em;
+}
+header .social-media .apps i {
+  font-size: 2.5em;
+  transition: 300ms all ease;
+}
+header .social-media .apps i:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+header .social-media button {
+  background-color: #ff0000;
+  color: #fefefe;
+  font-weight: 700;
+  padding: 1.2em 0;
+  border: none;
+  border-radius: 0.4em;
+  transition: 300ms all ease;
+}
+header .social-media button:hover {
+  transform: scale(1.07);
+  cursor: pointer;
+}
+
+.page-content {
+  padding: 4em 3.5em;
+  border-bottom: 1px solid;
+  box-shadow: 0 4px 7px #555;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content {
+    padding: 5em 10em;
+  }
+}
+.page-content .game {
+  font-weight: 900;
+  border-bottom: 1px dashed #ccc;
+  display: block;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .game {
+    font-size: 28px;
+    padding-bottom: 1em;
+  }
+}
+.page-content .flex-d {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .flex-d {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+.page-content .flex-d .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .flex-d .form-container {
+    width: 65%;
+  }
+}
+.page-content .flex-d .form-container h2 {
+  text-align: center;
+  transition: 300ms all ease;
+}
+.page-content .flex-d .form-container p {
+  text-align: center;
+  transition: 300ms all ease;
+}
+.page-content .flex-d .form-container .form-d {
+  border-radius: 0.4em;
+  padding: 1.5em 2em;
+  background-color: #ffefef;
+  border-bottom: 4px solid #ff0000;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .flex-d .form-container .form-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+}
+.page-content .flex-d .form-container .form-d h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.page-content .flex-d .form-container .form-d .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings span {
+  font-size: 1.2em;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns {
+  display: flex;
+  transition: 400ms all ease;
+  gap: 1em;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button {
+  font-size: 20px;
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 50%;
+  border: none;
+  transition: 400ms all ease;
+  color: #eeeeee;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .flex-d .form-container .form-d .form .flex-ratings .btns button {
+    width: 1.9em;
+    height: 1.9em;
+  }
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:first-of-type {
+  background-color: #ff0000;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:nth-of-type(2) {
+  background-color: #fca70b;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:nth-of-type(3) {
+  background-color: #f1d70f;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:nth-of-type(4) {
+  background-color: #a2f10f;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:last-of-type {
+  background-color: #00ff00;
+}
+.page-content .flex-d .form-container .form-d .form .flex-ratings .btns button:hover {
+  transform: scale(1.2);
+}
+.page-content .flex-d .form-container .form-d .optional {
+  width: 100%;
+  height: 10em;
+  resize: none;
+  padding: 1em;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 0.6em;
+  border-radius: 0.3em;
+  border: 1px solid #eee;
+}
+.page-content .flex-d .form-container .form-d .send {
+  width: 100%;
+  font-size: 18px;
+  padding: 0.7em;
+  font-weight: 900;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 0.3em;
+  color: #fefefe;
+  transition: 300ms all ease;
+}
+.page-content .flex-d .form-container .form-d .send:hover {
+  box-shadow: 0 0 10px #ff0000;
+  cursor: pointer;
+}
+.page-content .flex-d .form-container * {
+  color: #111111;
+}
+.page-content .flex-d .game-info p {
+  color: #111111;
+}
+.page-content .flex-d .game-info {
+  background-color: #f3f7fb;
+  padding: 1.2em 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 3px solid #005eac;
+}
+@media only screen and (min-width: 1115px) {
+  .page-content .flex-d .game-info {
+    width: 30%;
+  }
+}
+.page-content .flex-d .game-info .ds {
+  width: 12em;
+  height: 12em;
+  border: 7px solid #fff;
+  border-radius: 0.4em;
+  box-shadow: 2px 2px 8px #999;
+  margin-bottom: 2em;
+}
+.page-content .flex-d .game-info .info {
+  margin-bottom: 1em;
+}
+.page-content .flex-d .game-info .info div:not(.bv) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  border-top: 1px dashed #ccc;
+}
+.page-content .flex-d .game-info .info div {
+  width: 100%;
+}
+.page-content .flex-d .game-info .info .gm-rt {
+  border-bottom: 1px dashed #ccc;
+}
+.page-content .flex-d .game-info .info .gm-rt .bv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.6em;
+  width: 6em;
+}
+.page-content .flex-d .game-info .info .gm-rt .bv img {
+  width: 4em;
+}
+.page-content .flex-d .game-info .info .gm-rt .bv p {
+  font-size: 9px;
+  font-weight: 300;
+}
+.page-content .flex-d .game-info .share {
+  font-size: 1.2em;
+  padding: 1em 0;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #005eac;
+  color: #fefefe;
+  font-weight: 900;
+  letter-spacing: 2px;
+  width: 90%;
+  box-shadow: 4px 4px 8px #005eac;
+  transition: 400ms all ease;
+}
+.page-content .flex-d .game-info .share:hover {
+  background-color: #ff0000;
+  box-shadow: 4px 4px 8px #ff0000;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.algo {
+  font-size: 16px;
+}
+.algo .opcional {
+  font-size: 11px;
+  color: #ff0000;
+}
+
+.increase {
+  transform: scale(1.25);
+}
+
+.review-done {
+  padding: 1.5em 0 0 0;
+  color: #00ff00;
+  opacity: 0;
+  display: none;
+  transition: 1s all ease;
+}
+
+.rd {
+  gap: 1em;
+}
+
+.atlus {
+  width: 12em;
+}
+
+.s {
+  width: 10em;
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 3em 2.5em;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1115px) {
+  footer {
+    flex-direction: row;
+    gap: 4em;
+  }
+}
+footer h3 {
+  font-size: 17px;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+footer .dss {
+  margin-bottom: 0.5em;
+}
+footer .dss div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  padding-left: 0.3em;
+}
+footer .dss div a {
+  color: #005eac;
+  font-size: 14px;
+}
+footer .dss div a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .container2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+@media only screen and (min-width: 1115px) {
+  footer .container3 {
+    display: flex;
+    gap: 4em;
+  }
+}
+
+.dark-mode {
+  width: 2em;
+  height: 2em;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #142038;
+  position: fixed;
+  top: 90%;
+  left: 85%;
+  transition: 300ms all ease;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1115px) {
+  .dark-mode {
+    left: 95%;
+  }
+}
+
+.fa-sun {
+  color: #ffff00;
+}
+
+/*# sourceMappingURL=styles.css.map */
